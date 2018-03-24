@@ -44,7 +44,6 @@ class ViewController: UIViewController,UISearchBarDelegate{
     
     @IBAction func searchBtnTapped(_ sender: UIButton) {
         self.location=self.searchBar.text!
-        if self.searchBar.text != nil {
             APIController().getCurrentLoc(location: self.location, user: { (currentLocation) in
                 print(currentLocation.status)
                 DispatchQueue.main.async {
@@ -80,17 +79,6 @@ class ViewController: UIViewController,UISearchBarDelegate{
                 self.searchBtnOutlet.transform = .identity
                 self.getDirectionOutlet.transform = .identity
             }
-        }
-        else{
-            UIView.animate(withDuration: 1) {
-                self.searchBar.text = ""
-                self.downBar.transform = .identity
-                self.directionView.transform = .identity
-                self.searchBar.transform = .identity
-                self.searchBtnOutlet.transform = .identity
-                self.getDirectionOutlet.transform = .identity
-            }
-        }
     }
     @IBAction func getDirectionsBtnTapped(_ sender: UIButton) {
         UIView.animate(withDuration: 1) {
