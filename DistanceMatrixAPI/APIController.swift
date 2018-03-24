@@ -9,6 +9,18 @@
 import Foundation
 
 class APIController{
+    
+    
+    func getCurrentLoc(location:String,user:@escaping (GooglePlacesAPIModel)->Void,failure:@escaping (String)->Void){
+        var loc = location
+        loc = loc.replacingOccurrences(of: " ", with: "+")
+        let placesApiSrcUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(loc)&key=AIzaSyAIrAqx2jxYilueXxLB6pseTrdDgNYLf5o"
+        NetworkController().placesApi(url: placesApiSrcUrl, success: { (jsonData) in
+            user(GooglePlacesAPIModel.init(json:jsonData))
+        }) { (fail) in
+            failure(fail)
+        }
+    }
    
     func getLatLng(src:String,dest:String,user:@escaping (GooglePlacesAPIModel)->Void,failure:@escaping (String)->Void){
         var source = src
