@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesScheme</key>
+	<array/>
+	<key>item 0</key>
+	<string>GoogleChromes</string>
+	<key>item 1</key>
+	<string>comgooglemaps</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>This app uses your Microphone to allow Voice over IP communication with the Program Admin system</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

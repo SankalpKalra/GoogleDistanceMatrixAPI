@@ -16,6 +16,7 @@
 		0CB0F3562064AF010039D95A /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0F3552064AF010039D95A /* APIController.swift */; };
 		0CB0F3582064AF1E0039D95A /* DistanceMatrixJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0F3572064AF1E0039D95A /* DistanceMatrixJSONModel.swift */; };
 		0CE660342065245D00DD5182 /* GooglePlacesAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE660332065245D00DD5182 /* GooglePlacesAPIModel.swift */; };
+		5F178C56319D4E1725DBF82F /* Pods_DistanceMatrixAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AF9BD4EB9859F2210D27D5 /* Pods_DistanceMatrixAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		0CB0F3552064AF010039D95A /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		0CB0F3572064AF1E0039D95A /* DistanceMatrixJSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMatrixJSONModel.swift; sourceTree = "<group>"; };
 		0CE660332065245D00DD5182 /* GooglePlacesAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesAPIModel.swift; sourceTree = "<group>"; };
+		A1EAE0070BB98E5F1A0F5538 /* Pods-DistanceMatrixAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceMatrixAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DistanceMatrixAPI/Pods-DistanceMatrixAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9018F44EBF7582731B0D47 /* Pods-DistanceMatrixAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceMatrixAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-DistanceMatrixAPI/Pods-DistanceMatrixAPI.release.xcconfig"; sourceTree = "<group>"; };
+		F3AF9BD4EB9859F2210D27D5 /* Pods_DistanceMatrixAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DistanceMatrixAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F178C56319D4E1725DBF82F /* Pods_DistanceMatrixAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				0CB0F3402064AE7C0039D95A /* DistanceMatrixAPI */,
 				0CB0F33F2064AE7C0039D95A /* Products */,
+				2B09A972F72457BE69191945 /* Pods */,
+				BF5D14B1696D2B28D6A2685D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = DistanceMatrixAPI;
 			sourceTree = "<group>";
 		};
+		2B09A972F72457BE69191945 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1EAE0070BB98E5F1A0F5538 /* Pods-DistanceMatrixAPI.debug.xcconfig */,
+				DC9018F44EBF7582731B0D47 /* Pods-DistanceMatrixAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF5D14B1696D2B28D6A2685D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3AF9BD4EB9859F2210D27D5 /* Pods_DistanceMatrixAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CB0F3502064AE7C0039D95A /* Build configuration list for PBXNativeTarget "DistanceMatrixAPI" */;
 			buildPhases = (
+				033973B1ABD7995415E225DB /* [CP] Check Pods Manifest.lock */,
 				0CB0F33A2064AE7C0039D95A /* Sources */,
 				0CB0F33B2064AE7C0039D95A /* Frameworks */,
 				0CB0F33C2064AE7C0039D95A /* Resources */,
+				22DC70B943AE86DFB760B01E /* [CP] Embed Pods Frameworks */,
+				A95B8CE4DB180D4B3D218595 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033973B1ABD7995415E225DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DistanceMatrixAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22DC70B943AE86DFB760B01E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DistanceMatrixAPI/Pods-DistanceMatrixAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DistanceMatrixAPI/Pods-DistanceMatrixAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A95B8CE4DB180D4B3D218595 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DistanceMatrixAPI/Pods-DistanceMatrixAPI-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DistanceMatrixAPI/Pods-DistanceMatrixAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0CB0F33A2064AE7C0039D95A /* Sources */ = {
@@ -288,6 +374,7 @@
 		};
 		0CB0F3512064AE7C0039D95A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1EAE0070BB98E5F1A0F5538 /* Pods-DistanceMatrixAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -304,6 +391,7 @@
 		};
 		0CB0F3522064AE7C0039D95A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9018F44EBF7582731B0D47 /* Pods-DistanceMatrixAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

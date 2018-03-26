@@ -24,9 +24,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0a-ao-uwJ">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkv-c1-6HV" userLabel="BlueView">
                                 <rect key="frame" x="0.0" y="-32" width="375" height="121.66666666666667"/>
                                 <subviews>
@@ -228,13 +225,13 @@
                                 <rect key="frame" x="0.0" y="777" width="375" height="69"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77c-OM-GyP">
-                                        <rect key="frame" x="266.33333333333331" y="25.666666666666629" width="30" height="19.666666666666671"/>
+                                        <rect key="frame" x="247.66666666666663" y="25.666666666666629" width="30" height="19.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
                                         <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-yd-Mfz">
-                                        <rect key="frame" x="20.000000000000014" y="26" width="216.33333333333337" height="18.333333333333329"/>
+                                        <rect key="frame" x="20" y="26" width="197.66666666666666" height="18.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                         <color key="textColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -245,12 +242,12 @@
                                     <constraint firstItem="5yC-yd-Mfz" firstAttribute="leading" secondItem="L7Y-Jd-GJr" secondAttribute="leading" constant="20" id="8C3-k4-l7D"/>
                                     <constraint firstItem="77c-OM-GyP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="5yC-yd-Mfz" secondAttribute="trailing" constant="30" id="AUK-Js-GTk"/>
                                     <constraint firstItem="77c-OM-GyP" firstAttribute="centerY" secondItem="L7Y-Jd-GJr" secondAttribute="centerY" id="DXx-vE-1ep"/>
-                                    <constraint firstItem="77c-OM-GyP" firstAttribute="centerX" secondItem="L7Y-Jd-GJr" secondAttribute="centerX" multiplier="1.5" id="c8X-CM-cxD"/>
+                                    <constraint firstItem="77c-OM-GyP" firstAttribute="centerX" secondItem="L7Y-Jd-GJr" secondAttribute="centerX" multiplier="1.4" id="c8X-CM-cxD"/>
                                     <constraint firstAttribute="height" constant="69" id="dja-dh-VDn"/>
                                     <constraint firstItem="5yC-yd-Mfz" firstAttribute="centerY" secondItem="L7Y-Jd-GJr" secondAttribute="centerY" id="jVo-Sj-bLq"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmk-9X-gCA">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmk-9X-gCA" userLabel="DownView">
                                 <rect key="frame" x="0.0" y="777" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,13 +260,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L7Y-Jd-GJr" secondAttribute="bottom" constant="-68" id="64m-4W-hRV"/>
                             <constraint firstItem="AYo-w2-qPJ" firstAttribute="width" secondItem="ndx-un-VDx" secondAttribute="width" id="9wt-yu-YIf"/>
                             <constraint firstItem="AYo-w2-qPJ" firstAttribute="height" secondItem="ndx-un-VDx" secondAttribute="height" id="Bsw-02-F9q"/>
-                            <constraint firstItem="b0a-ao-uwJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CQ5-y7-4aa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L7Y-Jd-GJr" secondAttribute="trailing" id="Cns-4g-VVA"/>
-                            <constraint firstItem="b0a-ao-uwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GaN-CP-Hjp"/>
                             <constraint firstItem="L7Y-Jd-GJr" firstAttribute="top" secondItem="AYo-w2-qPJ" secondAttribute="bottom" id="Nom-tT-Nhm"/>
                             <constraint firstItem="MDz-y1-Neo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QIr-V2-jei"/>
-                            <constraint firstItem="b0a-ao-uwJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Vb0-Xq-YGH"/>
-                            <constraint firstItem="b0a-ao-uwJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vpe-Bn-cOO"/>
                             <constraint firstItem="MDz-y1-Neo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="az2-f0-cg1"/>
                             <constraint firstItem="Nkv-c1-6HV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="chb-pq-75p"/>
                             <constraint firstItem="Nkv-c1-6HV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="gRA-bl-2ZO"/>
@@ -285,15 +278,16 @@
                     <navigationItem key="navigationItem" title="GOOGLE MAPS" id="c28-N1-sV5"/>
                     <connections>
                         <outlet property="destinationTextField" destination="Rtw-oj-xdp" id="hqh-J1-BXV"/>
-                        <outlet property="directionView" destination="Nkv-c1-6HV" id="z98-Mk-pNn"/>
                         <outlet property="distanceTF" destination="77c-OM-GyP" id="oZV-G5-12c"/>
                         <outlet property="downBar" destination="L7Y-Jd-GJr" id="bOK-EY-hcR"/>
+                        <outlet property="downView" destination="dmk-9X-gCA" id="yZQ-YS-GN3"/>
                         <outlet property="getDirectionOutlet" destination="ndx-un-VDx" id="q5n-lv-a8r"/>
-                        <outlet property="mapView" destination="b0a-ao-uwJ" id="TvC-LK-PWM"/>
                         <outlet property="searchBar" destination="MDz-y1-Neo" id="zQL-Vn-uk5"/>
                         <outlet property="searchBtnOutlet" destination="AYo-w2-qPJ" id="mvM-W4-geG"/>
                         <outlet property="sourceTextField" destination="x0a-y9-zoL" id="3OV-gb-3aw"/>
+                        <outlet property="stackView" destination="dN8-jj-gMX" id="QgX-55-fpp"/>
                         <outlet property="timeTF" destination="5yC-yd-Mfz" id="8Hl-WW-lM6"/>
+                        <outlet property="topView" destination="Nkv-c1-6HV" id="ObK-e2-Bsy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
